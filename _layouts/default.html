@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+<meta name="description" content="{{ site.description }}">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230B7285'/%3E%3Ctext x='16' y='24' font-size='22' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='white'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&family=Noto+Sans+Gujarati:wght@400;600;700&family=Noto+Sans+Bengali:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-mn" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+<symbol id="i-gl" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c-4 4-4 14 0 18M12 3c4 4 4 14 0 18"/></symbol>
+<symbol id="i-ph" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M10 11l2 2 3-4M11 18h2"/></symbol>
+<symbol id="i-md" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9l5 3-5 3z"/></symbol>
+<symbol id="i-cl" viewBox="0 0 24 24"><path d="M4 20V9l8-5 8 5v11M9 20v-6h6v6"/></symbol>
+<symbol id="i-bl" viewBox="0 0 24 24"><path d="M4 20l1-4L16 5l3 3L8 19zM14 7l3 3"/></symbol>
+<symbol id="i-tr" viewBox="0 0 24 24"><path d="M4 5h8M8 3v2M5.5 5c.6 3 3 6 6 7.5M10.5 5c-.6 3-3 6-6 7.5M13 20l4-9 4 9M14.4 17h5.2"/></symbol>
+<symbol id="i-ts" viewBox="0 0 24 24"><path d="M5 10v4M9 6v12M13 3v18M17 7v10M21 10v4"/></symbol>
+<symbol id="i-lo" viewBox="0 0 24 24"><path d="M12 21s-6-5.5-6-11a6 6 0 0 1 12 0c0 5.500-6 11-6 11z"/><circle cx="12" cy="10" r="2"/></symbol>
+<symbol id="i-ml" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 12l3 3 5-6"/></symbol>
+<symbol id="i-rg" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></symbol>
+<symbol id="i-fn" viewBox="0 0 24 24"><ellipse cx="12" cy="14" rx="5" ry="6"/><path d="M12 8V5M7 12H3M17 12h4M8 19l-3 2M16 19l3 2"/></symbol>
+<symbol id="i-dv" viewBox="0 0 24 24"><rect x="3" y="5" width="13" height="10" rx="1.5"/><rect x="15" y="9" width="6" height="11" rx="1.5"/><path d="M7 19h5"/></symbol>
+<symbol id="i-st" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M7 10h10M7 14h6"/></symbol>
+<symbol id="i-cp" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10.5 10a2.5 2.5 0 1 0 0 4M17 10a2.5 2.5 0 1 0 0 4"/></symbol>
+<symbol id="i-tt" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-db" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></symbol>
+<symbol id="i-ld" viewBox="0 0 24 24"><path d="M3 9l9-4 9 4-9 4zM7 11v5c3 2 7 2 10 0v-5"/></symbol>
+</svg>
+<header class="nav"><div class="wrap">
+<a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+<button class="menu" aria-expanded="false" aria-controls="nav" aria-label="Menu"><svg class="i"><use href="#i-mn"/></svg></button>
+<nav id="nav" aria-label="Main">
+<a href="{{ '/#language' | relative_url }}">Language</a>
+<a href="{{ '/#technical' | relative_url }}">Technical</a>
+<a href="{{ '/#media' | relative_url }}">Media</a>
+<a href="{{ '/#clients' | relative_url }}">Clients</a>
+<a href="{{ '/blog/' | relative_url }}">Blog</a>
+<a class="dl" href="{{ site.resume | relative_url }}" download>Resume (PDF)</a>
+</nav>
+</div></header>
+{{ content }}
+<footer class="foot"><div class="wrap">
+<span>&copy; {{ 'now' | date: '%Y' }} {{ site.title }}</span>
+<span><a href="mailto:{{ site.email }}">{{ site.email }}</a>, <a href="{{ site.linkedin }}">LinkedIn</a></span>
+</div></footer>
+<script>
+const b=document.querySelector('.menu'),n=document.getElementById('nav');
+b.onclick=()=>b.setAttribute('aria-expanded',n.classList.toggle('open'));
+n.onclick=e=>{if(e.target.tagName=='A'){n.classList.remove('open');b.setAttribute('aria-expanded',false)}};
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+---
+layout: default
+title: Blog
+---
+<section class="post">
+<h1>Blog</h1>
+<ul class="plist">
+{% for post in site.posts %}
+<li><a href="{{ post.url | relative_url }}">{{ post.title }}</a><time>{{ post.date | date: "%B %-d, %Y" }}</time><p>{{ post.description | default: post.excerpt | strip_html | truncate: 140 }}</p></li>
+{% else %}
+<li>No posts yet.</li>
+{% endfor %}
+</ul>
+</section>

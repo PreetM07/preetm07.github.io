@@ -1,0 +1,13 @@
+# To add a client: copy a pair of lines, then save the logo as assets/logos/<logo file>.
+- name: Atlas Translation
+  logo: atlas-translation.svg
+- name: ICON plc
+  logo: icon-plc.svg
+- name: Conversis
+  logo: conversis.svg
+- name: Mendoza
+  logo: mendoza.svg
+- name: Acclaro
+  logo: acclaro.svg
+- name: OpenAI
+  logo: openai.svg
