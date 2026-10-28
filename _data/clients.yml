@@ -2,7 +2,7 @@
 - name: Atlas Translation
   logo: atlas-translation.svg
 - name: ICON plc
-  logo: icon-plc.svg
+  logo: icon.svg
 - name: Conversis
   logo: conversis.svg
 - name: Mendoza
@@ -11,3 +11,5 @@
   logo: acclaro.svg
 - name: OpenAI
   logo: openai.svg
+- name: Crunchyroll
+  logo: crunchyroll.svg
