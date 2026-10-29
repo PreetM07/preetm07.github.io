@@ -55,7 +55,7 @@ ul{list-style:none;padding:0}
 .note{color:var(--mut);margin-top:14px}
 .logos{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
 .logos li{background:#fff;color:var(--mut);display:grid;place-items:center;min-height:90px;padding:12px;font-weight:600;text-align:center}
-.logos img{max-width:130px;max-height:44px;filter:grayscale(1)}
+.logos img{height:56px;max-width:100%;filter:grayscale(1)}
 .car{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px;scrollbar-width:thin;min-width:0}
 .card{flex:0 0 min(270px,78%);scroll-snap-align:start;border:1px solid var(--line);border-radius:12px;padding:16px;text-decoration:none;display:flex;flex-direction:column;gap:6px}
 .card:hover{border-color:var(--acc)}
@@ -90,3 +90,4 @@ ul{list-style:none;padding:0}
 .hero{padding-top:40px}.side p{max-width:none}
 dd{margin-left:0;padding-left:32px}
 }
+.feat{background:var(--tint);border-radius:14px;padding:22px 22px 18px}.feat p{margin-bottom:14px}.feat .chips li{background:#fff}
